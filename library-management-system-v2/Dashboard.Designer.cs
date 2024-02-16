@@ -45,6 +45,7 @@
             this.btnHome.TabIndex = 0;
             this.btnHome.Text = "Home";
             this.btnHome.UseVisualStyleBackColor = true;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // btnBook
             // 
@@ -54,6 +55,7 @@
             this.btnBook.TabIndex = 1;
             this.btnBook.Text = "Book";
             this.btnBook.UseVisualStyleBackColor = true;
+            this.btnBook.Click += new System.EventHandler(this.btnBook_Click);
             // 
             // btnMember
             // 
@@ -63,6 +65,7 @@
             this.btnMember.TabIndex = 2;
             this.btnMember.Text = "Member";
             this.btnMember.UseVisualStyleBackColor = true;
+            this.btnMember.Click += new System.EventHandler(this.btnMember_Click);
             // 
             // btnBorrowing
             // 
@@ -72,6 +75,7 @@
             this.btnBorrowing.TabIndex = 5;
             this.btnBorrowing.Text = "Borrowing";
             this.btnBorrowing.UseVisualStyleBackColor = true;
+            this.btnBorrowing.Click += new System.EventHandler(this.btnBorrowing_Click);
             // 
             // btnReturn
             // 
@@ -81,6 +85,7 @@
             this.btnReturn.TabIndex = 4;
             this.btnReturn.Text = "Return";
             this.btnReturn.UseVisualStyleBackColor = true;
+            this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click);
             // 
             // btnLoan
             // 
@@ -90,6 +95,7 @@
             this.btnLoan.TabIndex = 3;
             this.btnLoan.Text = "Loan";
             this.btnLoan.UseVisualStyleBackColor = true;
+            this.btnLoan.Click += new System.EventHandler(this.btnLoan_Click);
             // 
             // label1
             // 
