@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtSearchNic = new System.Windows.Forms.TextBox();
+            this.txtSearchUserId = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dateDate = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
@@ -46,13 +46,13 @@
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // txtSearchNic
+            // txtSearchUserId
             // 
-            this.txtSearchNic.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearchNic.Location = new System.Drawing.Point(6, 53);
-            this.txtSearchNic.Name = "txtSearchNic";
-            this.txtSearchNic.Size = new System.Drawing.Size(216, 26);
-            this.txtSearchNic.TabIndex = 3;
+            this.txtSearchUserId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearchUserId.Location = new System.Drawing.Point(6, 53);
+            this.txtSearchUserId.Name = "txtSearchUserId";
+            this.txtSearchUserId.Size = new System.Drawing.Size(216, 26);
+            this.txtSearchUserId.TabIndex = 3;
             // 
             // label1
             // 
@@ -60,9 +60,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(2, 30);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(36, 20);
+            this.label1.Size = new System.Drawing.Size(60, 20);
             this.label1.TabIndex = 2;
-            this.label1.Text = "NIC";
+            this.label1.Text = "UserID";
             // 
             // dateDate
             // 
@@ -91,6 +91,7 @@
             this.btnClear.TabIndex = 20;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnSearch
             // 
@@ -102,6 +103,7 @@
             this.btnSearch.TabIndex = 21;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = false;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // groupBox1
             // 
@@ -109,7 +111,7 @@
             this.groupBox1.Controls.Add(this.btnSearch);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.btnClear);
-            this.groupBox1.Controls.Add(this.txtSearchNic);
+            this.groupBox1.Controls.Add(this.txtSearchUserId);
             this.groupBox1.Location = new System.Drawing.Point(38, 56);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(232, 273);
@@ -182,6 +184,7 @@
             this.btnIssue.TabIndex = 22;
             this.btnIssue.Text = "Issue";
             this.btnIssue.UseVisualStyleBackColor = false;
+            this.btnIssue.Click += new System.EventHandler(this.btnIssue_Click);
             // 
             // label2
             // 
@@ -222,7 +225,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtSearchNic;
+        private System.Windows.Forms.TextBox txtSearchUserId;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DateTimePicker dateDate;
         private System.Windows.Forms.Label label7;

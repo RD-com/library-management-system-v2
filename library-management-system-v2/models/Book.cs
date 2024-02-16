@@ -178,7 +178,7 @@ namespace library_management_system_v2.models
 
             while (reader.Read())
             {
-                var id = (int)reader["BookID"];
+                var id = (int)reader["Id"];
                 var title = reader["Title"].ToString();
                 var author = reader["Author"].ToString();
                 var classificationCode = reader["ClassificationCode"].ToString();

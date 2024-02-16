@@ -137,6 +137,36 @@ namespace library_management_system_v2.models
             return member;
         }
 
+        public static Member GetOneWithUserID(string userid)
+        {
+            Member member = null;
+            var connection = Database.Instance.GetConnection();
+            connection.Open();
+
+            var query = "SELECT * FROM [Member] WHERE UserID = @id";
+            SqlCommand cmd = new SqlCommand(query, connection);
+            cmd.Parameters.AddWithValue("@id", userid);
+
+            SqlDataReader reader = cmd.ExecuteReader();
+
+            if (reader.Read())
+            {
+                member = new Member(
+                    id: (int)reader["Id"],
+                    userID: reader["UserID"].ToString(),
+                    name: reader["Name"].ToString(),
+                    nic: reader["NIC"].ToString(),
+                    address: reader["Address"].ToString(),
+                    gender: reader["Gender"].ToString()
+                );
+            }
+
+            reader.Close();
+            connection.Close();
+
+            return member;
+        }
+
         public static List<Member> GetAll()
         {
             List<Member> members = new List<Member>();
