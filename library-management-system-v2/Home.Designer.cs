@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.labaleBooks = new System.Windows.Forms.Label();
+            this.labelBooks = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.labelMembers = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.labelBorrowings = new System.Windows.Forms.Label();
-            this.lableReturns = new System.Windows.Forms.Label();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.labelReturns = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -44,7 +44,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.labaleBooks);
+            this.groupBox1.Controls.Add(this.labelBooks);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(228, 137);
             this.groupBox1.Name = "groupBox1";
@@ -53,15 +53,15 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Books";
             // 
-            // labaleBooks
+            // labelBooks
             // 
-            this.labaleBooks.AutoSize = true;
-            this.labaleBooks.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labaleBooks.Location = new System.Drawing.Point(82, 74);
-            this.labaleBooks.Name = "labaleBooks";
-            this.labaleBooks.Size = new System.Drawing.Size(32, 33);
-            this.labaleBooks.TabIndex = 0;
-            this.labaleBooks.Text = "0";
+            this.labelBooks.AutoSize = true;
+            this.labelBooks.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelBooks.Location = new System.Drawing.Point(82, 74);
+            this.labelBooks.Name = "labelBooks";
+            this.labelBooks.Size = new System.Drawing.Size(32, 33);
+            this.labelBooks.TabIndex = 0;
+            this.labelBooks.Text = "0";
             // 
             // groupBox2
             // 
@@ -74,6 +74,16 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Members";
             // 
+            // labelMembers
+            // 
+            this.labelMembers.AutoSize = true;
+            this.labelMembers.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMembers.Location = new System.Drawing.Point(75, 74);
+            this.labelMembers.Name = "labelMembers";
+            this.labelMembers.Size = new System.Drawing.Size(32, 33);
+            this.labelMembers.TabIndex = 1;
+            this.labelMembers.Text = "0";
+            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.labelBorrowings);
@@ -85,27 +95,6 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Borrowings";
             // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.lableReturns);
-            this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(443, 314);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(193, 171);
-            this.groupBox4.TabIndex = 3;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Pendign Returns";
-            // 
-            // labelMembers
-            // 
-            this.labelMembers.AutoSize = true;
-            this.labelMembers.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMembers.Location = new System.Drawing.Point(75, 74);
-            this.labelMembers.Name = "labelMembers";
-            this.labelMembers.Size = new System.Drawing.Size(32, 33);
-            this.labelMembers.TabIndex = 1;
-            this.labelMembers.Text = "0";
-            // 
             // labelBorrowings
             // 
             this.labelBorrowings.AutoSize = true;
@@ -116,15 +105,26 @@
             this.labelBorrowings.TabIndex = 1;
             this.labelBorrowings.Text = "0";
             // 
-            // lableReturns
+            // groupBox4
             // 
-            this.lableReturns.AutoSize = true;
-            this.lableReturns.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lableReturns.Location = new System.Drawing.Point(75, 68);
-            this.lableReturns.Name = "lableReturns";
-            this.lableReturns.Size = new System.Drawing.Size(32, 33);
-            this.lableReturns.TabIndex = 1;
-            this.lableReturns.Text = "0";
+            this.groupBox4.Controls.Add(this.labelReturns);
+            this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox4.Location = new System.Drawing.Point(443, 314);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(193, 171);
+            this.groupBox4.TabIndex = 3;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Pendign Returns";
+            // 
+            // labelReturns
+            // 
+            this.labelReturns.AutoSize = true;
+            this.labelReturns.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelReturns.Location = new System.Drawing.Point(75, 68);
+            this.labelReturns.Name = "labelReturns";
+            this.labelReturns.Size = new System.Drawing.Size(32, 33);
+            this.labelReturns.TabIndex = 1;
+            this.labelReturns.Text = "0";
             // 
             // Home
             // 
@@ -154,12 +154,12 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label labaleBooks;
+        private System.Windows.Forms.Label labelBooks;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Label labelMembers;
         private System.Windows.Forms.Label labelBorrowings;
-        private System.Windows.Forms.Label lableReturns;
+        private System.Windows.Forms.Label labelReturns;
     }
 }
