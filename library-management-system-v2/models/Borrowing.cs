@@ -164,6 +164,37 @@ namespace library_management_system_v2.models
 
             return borrowings;
         }
+
+        public static List<Borrowing> GetAllWithUserID(string userid)
+        {
+            List<Borrowing> borrowings = new List<Borrowing>();
+            var connection = Database.Instance.GetConnection();
+            connection.Open();
+
+            var query = "SELECT * FROM [Borrowing] WHERE UserID = @userid AND Returned = 0";
+            SqlCommand cmd = new SqlCommand(query, connection);
+
+            cmd.Parameters.AddWithValue("@userid", userid);
+
+            SqlDataReader reader = cmd.ExecuteReader();
+
+            while (reader.Read())
+            {
+                borrowings.Add(new Borrowing(
+                    id: (int)reader["Id"],
+                    userID: reader["UserID"].ToString(),
+                    bookID: (int)reader["BookID"],
+                    issuedDate: reader["IssuedDate"].ToString(),
+                    returned: (bool)reader["Returned"],
+                    returnedDate: reader["ReturnedDate"].ToString()
+                ));
+            }
+
+            reader.Close();
+            connection.Close();
+
+            return borrowings;
+        }
     }
 
 }

@@ -71,6 +71,7 @@ namespace library_management_system_v2
         void Clear()
         {
             cmbBook.Items.Clear();
+            cmbBook.Text = string.Empty;
             txtGender.Text = string.Empty;
             txtName.Text = string.Empty;
             dateDate.Text = string.Empty;
