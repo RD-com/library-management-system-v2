@@ -22,6 +22,7 @@ namespace library_management_system_v2
 
         void LoadData()
         {
+            dgvBorrowings.Rows.Clear(); 
             var borrowings = models.Borrowing.GetAll();
             foreach (var borrowing in borrowings)
             {
